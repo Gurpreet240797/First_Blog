@@ -9,6 +9,9 @@
 			<div class="col-md-8">
 				{{ Form::label('title','Title') }}
 				{{ Form::text('title',null,["class"=>'form-control input-lg']) }}
+
+				{{ Form::label('slug','Url') }}
+				{{ Form::text('slug',null,["class"=>'form-control']) }}
 				
 				{{ Form::label('content','Content') }}
 				{{ Form::textarea('content',null,["class"=>'form-control']) }}

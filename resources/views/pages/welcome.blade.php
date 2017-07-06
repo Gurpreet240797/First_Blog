@@ -19,7 +19,7 @@
                         <div class="post">
                             <h3>{{ $post->title }}</h3>
                             <p>{{ substr($post->content,0,300) }}{{ strlen($post->content)>300 ? "..." : ""}}</p>
-                            <a class="btn btn-default" href="#" role="button">Read More</a>
+                            <a class="btn btn-default" href="{{ url('blog/'.$post->slug) }}" role="button">Read More</a>
                         </div>
 
                         <hr>

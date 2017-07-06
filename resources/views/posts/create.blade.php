@@ -16,13 +16,16 @@
 			<hr>
 
 			{!! Form::open(array('route' => 'posts.store','data-parsley-validate'=>'')) !!}
-				{{Form::label('title','Title')}}
-				{{Form::text('title',null,array('class'=>'form-control', 'requried'=>'', 'maxlength'=>'190'))}}
+				{{ Form::label('title','Title') }}
+				{{ Form::text('title',null,array('class'=>'form-control', 'requried'=>'', 'maxlength'=>'190')) }}
 
-				{{Form::label('content','Post Body')}}
-				{{Form::textarea('content',null,array('class'=>'form-control', 'requried'=>''))}}
+				{{ Form::label('slug', 'Url') }}
+				{{ Form::text('slug', null, array('class'=>'form-control', 'requried'=>'', 'maxlength'=>'190', 'minlength'=>'5')) }}
 
-				{{Form::submit('Create Post', array('class'=>'btn btn-success btn-lg btn-block' , 'style'=>'margin-top:20px;'))}}
+				{{ Form::label('content','Post Body') }}
+				{{ Form::textarea('content',null,array('class'=>'form-control', 'requried'=>'')) }}
+
+				{{ Form::submit('Create Post', array('class'=>'btn btn-success btn-lg btn-block' , 'style'=>'margin-top:20px;')) }}
 			{!! Form::close() !!}
 		</div>
 	</div>

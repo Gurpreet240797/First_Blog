@@ -1,2 +1,2 @@
 <hr>
-<p class="text-center">Copyright Laravel - All Rights Reserved</p>
+<p class="text-center">Copyright Gurpreet - All Rights Reserved</p>

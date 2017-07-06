@@ -4,6 +4,7 @@
 <head>
 @include('partials._head')
 @yield('stylesheets')
+
 </head>
 <body>
 

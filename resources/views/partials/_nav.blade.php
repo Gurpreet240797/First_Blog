@@ -27,7 +27,7 @@
                          <li class="dropdown ">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Log In</a></li>
+                                <li class="{{ Request::is('posts')? "active" : "" }}"><a href="/posts">Posts</a></li>
                                 <li class="divider"></li>
                                 <li><a href="#">Log Out</a></li>
                             </ul>
